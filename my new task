@@ -1,0 +1,109 @@
+package com.company;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class tutclass {
+    public static void main(String[] args) {
+        /*
+
+        //PRINTING THE PATTERN
+        for (int i=1;i<5;i++)
+        {
+            for (int j=5;j>i;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+//PRINTING THE SUM OF FIRST N EVEN NUMBERS
+        int item=0;
+        int sum=0;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        while(n>1)
+        {
+            item=item+2;
+            sum=sum+item;
+            n-=1;
+        }
+        System.out.println(sum);
+
+ //PRINTING THE MULTIPLICATION TABLE OF THE NUMBER GIVEN BY THE USER
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for (int i=1;i<=10;i++)
+        {
+            System.out.println(n+" "+"x"+" "+i+"="+n*i);
+        }
+
+
+        //PRINTING THE REVERSE MULTIPLICATION TABLE OF THE NUMBER GIVEN BY THE USER
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for (int i=10;i>=1;i--)
+        {
+            System.out.println(n+" "+"x"+" "+i+"="+n*i);
+        }
+
+
+        //FIND THE FACTORIAL OF THE NUMBER ENTERED BY THE USER
+        float fact=1;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for (int i=n;i>=1;i--)
+        {
+            fact=fact*i;
+        }
+            System.out.println(fact);
+
+        //FINDING THE FACTORIAL OF THE NUMBER USING WHILE LOOP
+        int fact=1;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        while(n>0)
+        {
+            fact=fact*n;
+            n-=1;
+        }
+        System.out.println(fact);
+
+        //PRINTING THE PATTERN USING WHILE LOOP
+        int i = 1;
+        int j = 5;
+        while (i < 5) {
+            while (j > i) {
+                System.out.print("*");
+                j -= 1;
+            }
+            System.out.println();
+            i = i + 1;
+        }
+
+        //FINDING THE SUM OF THE MULTIPLICATION RESULT OF ANY NUMBER
+        float sum=0;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            sum=sum+i*n;
+        }
+        System.out.println(sum);
+
+        //FINDING THE SUM OF EVEN NUMBERS USING THE FOR LOOP
+        int num=0;
+        float sum=0;
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<n;i++)
+        {
+            num=num+2;
+            sum=sum+num;
+        }
+        System.out.println("The sum of the first n even number's is "+sum);
+
+
+
+    }
+}
+
