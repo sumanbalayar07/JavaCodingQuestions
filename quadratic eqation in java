@@ -1,0 +1,39 @@
+package com.company;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+       Scanner sc=new Scanner(System.in);
+       float d,root=0,root1=0;
+        System.out.println("ENter the values of a,b,c");
+        float a=sc.nextInt();
+        float b=sc.nextInt();
+        float c=sc.nextInt();
+        d= (float) Math.pow(b,2)-4*a*c;
+        //System.out.println(d);
+        if(d>0)
+        {
+            root=(float) (-b+Math.sqrt(d))/(2*a);
+            root1=(float) (-b-Math.sqrt(d))/(2*a);
+            System.out.println(root);
+            System.out.println(root1);
+        }
+        if(d==0)
+        {
+            root=root1=(float) (-b/(2*a));
+            System.out.println(root);
+            System.out.println(root1);
+        }
+        if(d<0)
+        {
+            root=root1=(float)(-b/(2*a));
+            System.out.println(root+"+"+(Math.sqrt(-d))/(2*a)+"i");
+            System.out.println(root1+"-"+(Math.sqrt(-d))/(2*a)+"i");
+
+        }
+    }
+}
