@@ -1,0 +1,25 @@
+//WE ARE GOING TO PRINT THE FIBONACCI SERIES IN THE JAVA PROGRAMMING NOW
+import java.util.Locale;
+import java.util.Scanner;
+
+public class wtf {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a,i,n=0,m=1,sum=0;
+        System.out.println("Enter how many number upto which you want the series to go:");
+        a=sc.nextInt();
+        if(a==1)
+            System.out.println(n);
+        else
+        System.out.println(n);
+        System.out.println(m);
+        for(i=3;i<=a;i++)
+        {
+            sum=n+m;
+            n=m;
+            m=sum;
+            System.out.println(sum);
+        }
+
+    }
+}
